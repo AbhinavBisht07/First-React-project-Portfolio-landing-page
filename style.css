@@ -58,14 +58,28 @@ main #container nav div#leftCorner div#menu a {
   color: black;
   font-size: 14px;
   font-weight: 500;
+  padding: 7px 15px 7px 15px;
+  border-radius: 20px;
+  transition: 0.1s all ease;
 }
-main #container nav div#leftCorner div#menu a:hover {
-  text-decoration: underline;
+main #container nav div#leftCorner div#menu a:active {
+  scale: 0.95;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.384);
+}
+main #container nav div#rightCorner {
+  cursor: pointer;
+  padding: 7px 15px 7px 15px;
+  border-radius: 20px;
+  transition: 0.1s all ease;
 }
 main #container nav div#rightCorner a#bookCall {
   color: black;
   font-weight: 500;
   font-size: 16px;
+}
+main #container nav div#rightCorner:active {
+  scale: 0.95;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.384);
 }
 main #container section {
   margin-top: 5%;
@@ -129,10 +143,17 @@ main #container section div#right div#middle h1 {
 main #container section div#right div#middle p {
   font-size: 18px;
 }
+main #container section div#right div#bottom {
+  cursor: pointer;
+  width: 130px;
+  padding: 7px 15px 7px 15px;
+  border-radius: 20px;
+  transition: 0.1s all ease;
+}
 main #container section div#right div#bottom a {
-  text-decoration: none;
   color: black;
 }
-main #container section div#right div#bottom a:hover {
-  text-decoration: underline;
+main #container section div#right div#bottom:active {
+  scale: 0.95;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.384);
 }/*# sourceMappingURL=style.css.map */

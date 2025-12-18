@@ -21,7 +21,7 @@ function section() {
     let middle = React.createElement("div", {id:"middle"},[h13, p3]);
 
 
-    let a5 = React.createElement("a", {href:""}, "Scroll down");
+    let a5 = React.createElement("a", {href:"#", onclick:"return false;"}, "Scroll down");
     let i3 = React.createElement("i", {class:"ri-arrow-down-line"},);
     let bottom = React.createElement("div", {id:"bottom"},[a5,i3]);
 
