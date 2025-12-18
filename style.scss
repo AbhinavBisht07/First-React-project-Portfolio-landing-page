@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    padding: 30px 60px 30px 60px;
+    background-color: lightblue;
+
+    #container {
+        background-image: url("./mainImage.png");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: 100%;
+        background-size: 700px;
+        width: 75%;
+        margin: auto;
+        height: 100%;
+        background-color: #e8e8e8;
+        border-radius: 10px;
+        padding: 30px 40px;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 50px;
+
+            div#leftCorner {
+                display: flex;
+                align-items: center;
+                gap: 55px;
+
+                img#profile {
+                    width: 40px;
+                    height: 40px;
+                    object-fit: contain;
+                    border-radius: 50%;
+                    cursor: pointer;
+                }
+
+                div#menu {
+                    display: flex;
+                    gap: 20px;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            div#rightCorner {
+                a#bookCall {
+                    color: black;
+                    font-weight: 500;
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        section {
+            margin-top: 5%;
+            height: 80%;
+            display: flex;
+            gap: 100px;
+            padding: 0px 7px;
+
+            div#left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                span {
+                    color: #b6b6b6;
+                    font-weight: 500;
+                    writing-mode: vertical-rl;
+                    transform: rotate(180deg);
+                    font-size: 13px;
+                }
+
+                div#line {
+                    width: 1px;
+                    border: 1px solid #aeaeae89;
+                    height: 66%;
+                    background-color: #aeaeae92;
+                }
+            }
+
+            div#right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                div#top {
+                    display: flex;
+                    gap: 30px;
+
+                    div {
+                        position: relative;
+                        h1 {
+                            font-size: 35px;
+                            font-weight: 300;
+
+                        }
+                        p {
+                            font-size: 14px;
+                            color: rgb(95, 95, 95);
+                        }
+                        i {
+                            position: absolute;
+                            top: 18%;
+                            left: -19%;
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                div#middle {
+                    margin-bottom: 70px;
+                    h1 {
+                        font-size: 170px;
+                        font-weight: 300;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                }
+
+                div#bottom {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
